@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: test-containers-sandbox
+  datasource:
+      url: jdbc:postgresql://localhost:5432/sandbox
+      username: gabbloquet
+      password: p@ssw0rd
