@@ -1,6 +1,5 @@
-package io.github.test_containers_sandbox.infrastructure;
+package io.github.test_containers_sandbox.action.infrastructure;
 
-import java.util.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ActionJpaRepository extends JpaRepository<ActionJpaDto, Integer> {}

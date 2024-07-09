@@ -1,7 +1,8 @@
 package io.github.test_containers_sandbox.domain;
 
+import io.github.test_containers_sandbox.action.domain.ActionRepository;
 import io.github.test_containers_sandbox.configuration.DatabaseIntegrationTest;
-import io.github.test_containers_sandbox.domain.model.Action;
+import io.github.test_containers_sandbox.action.domain.model.Action;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
