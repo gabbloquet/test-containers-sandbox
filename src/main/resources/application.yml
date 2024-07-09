@@ -16,3 +16,4 @@ bucket:
   endpoint: "http://localhost:9000"
   access-key: sandboxkey
   secret-key: sandboxsecret
+  region: null

@@ -1,4 +1,4 @@
-package io.github.test_containers_sandbox.action.infrastructure;
+package io.github.test_containers_sandbox.action.infrastructure.database;
 
 import io.github.test_containers_sandbox.action.domain.model.Action;
 import jakarta.persistence.Column;

@@ -19,6 +19,9 @@ public class S3ClientConfig {
     @Value("${bucket.endpoint}")
     private String endpoint;
 
+    @Value("${bucket.region}")
+    private String region;
+
     @Value("${bucket.access-key}")
     private String accessKey;
 
@@ -30,7 +33,7 @@ public class S3ClientConfig {
         AWSCredentials credentials = new BasicAWSCredentials(accessKey, secretKey);
         AmazonS3 client = AmazonS3ClientBuilder
                 .standard()
-                .withEndpointConfiguration(new EndpointConfiguration(endpoint, "null"))
+                .withEndpointConfiguration(new EndpointConfiguration(endpoint, region))
                 .withCredentials(new AWSStaticCredentialsProvider(credentials))
                 .withPathStyleAccessEnabled(true)
                 .build();

@@ -1,9 +1,9 @@
-package io.github.test_containers_sandbox.domain;
+package io.github.test_containers_sandbox.action.domain;
 
-import io.github.test_containers_sandbox.action.domain.ActionRepository;
-import io.github.test_containers_sandbox.configuration.DatabaseIntegrationTest;
+import static org.assertj.core.api.Assertions.assertThat;
+
 import io.github.test_containers_sandbox.action.domain.model.Action;
-import org.junit.jupiter.api.Assertions;
+import io.github.test_containers_sandbox.configuration.DatabaseIntegrationTest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -20,6 +20,6 @@ class ActionRepositoryIntegrationTest extends DatabaseIntegrationTest {
 
         Action savedAction = actionRepository.create(action);
 
-        Assertions.assertEquals(action, savedAction);
+        assertThat(action).isEqualTo(savedAction);
     }
 }

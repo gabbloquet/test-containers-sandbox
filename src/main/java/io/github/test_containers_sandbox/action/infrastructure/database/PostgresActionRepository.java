@@ -1,4 +1,4 @@
-package io.github.test_containers_sandbox.action.infrastructure;
+package io.github.test_containers_sandbox.action.infrastructure.database;
 
 import io.github.test_containers_sandbox.action.domain.model.Action;
 import io.github.test_containers_sandbox.action.domain.ActionRepository;
@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository;
 public class PostgresActionRepository implements ActionRepository {
 
     private final ActionJpaRepository actionJpaRepository;
-
 
     @Override
     public Action create(Action action) {
