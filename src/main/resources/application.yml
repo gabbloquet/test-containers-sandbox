@@ -5,3 +5,8 @@ spring:
       url: jdbc:postgresql://localhost:5432/sandbox
       username: gabbloquet
       password: p@ssw0rd
+  flyway:
+    table: schema_version
+  jpa:
+    hibernate:
+      ddl-auto: validate
