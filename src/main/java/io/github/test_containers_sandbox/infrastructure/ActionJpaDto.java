@@ -1,6 +1,6 @@
 package io.github.test_containers_sandbox.infrastructure;
 
-import io.github.test_containers_sandbox.domain.Action;
+import io.github.test_containers_sandbox.domain.model.Action;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

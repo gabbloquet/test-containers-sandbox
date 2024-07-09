@@ -1,6 +1,6 @@
 package io.github.test_containers_sandbox.infrastructure;
 
-import io.github.test_containers_sandbox.domain.Action;
+import io.github.test_containers_sandbox.domain.model.Action;
 import io.github.test_containers_sandbox.domain.ActionRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
