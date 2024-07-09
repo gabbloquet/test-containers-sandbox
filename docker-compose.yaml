@@ -17,5 +17,18 @@ services:
     volumes:
       - db-data:/var/lib/postgresql/data
 
+  minio:
+    image: minio/minio
+    ports:
+      - '9000:9000'
+      - '8900:8900'
+    volumes:
+      - 'minio-data:/data/minio'
+    environment:
+      - "MINIO_ACCESS_KEY=sandboxkey"
+      - "MINIO_SECRET_KEY=sandboxsecret"
+    command: server /data/minio --console-address ":8900"
+
 volumes:
   db-data:
+  minio-data:

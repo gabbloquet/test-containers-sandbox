@@ -10,3 +10,9 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
+
+bucket:
+  name: "sandbox-files"
+  endpoint: "http://localhost:9000"
+  access-key: sandboxkey
+  secret-key: sandboxsecret

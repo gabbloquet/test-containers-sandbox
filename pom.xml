@@ -19,6 +19,7 @@
 
 	<properties>
 		<java.version>22</java.version>
+		<amazon.version>1.12.757</amazon.version>
 	</properties>
 
 	<dependencies>
@@ -59,6 +60,13 @@
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
+		</dependency>
+
+		<!--BUCKET-->
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-s3</artifactId>
+			<version>${amazon.version}</version>
 		</dependency>
 	</dependencies>
 
